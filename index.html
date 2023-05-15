@@ -7,7 +7,33 @@
     <title>Vite + TS</title>
   </head>
   <body>
-    <div id="app"></div>
+    <form class="refresh">
+      <h2 class="mb-3">Enter Website link to refresh</h2>
+
+      <input
+        class="mb-4"
+        type="text"
+        name="url"
+        placeholder="Ctrl + v to paste link"
+        value=""
+        required=""
+      />
+
+      <br />
+
+      <label class="timer mb-4">
+        Refresh page at every
+        <input type="number" name="interval" placeholder="10" value="10" />
+        seconds
+      </label>
+
+      <div class="spinner-container">
+        <button class="spinner fa fa-refresh">
+          <span>START / STOP</span>
+        </button>
+      </div>
+    </form>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
