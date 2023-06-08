@@ -1,3 +1,5 @@
+// Source: https://pagerefresher.com
+
 (function () {
   var Refresher = function ($el) {
     this.$el = $el;

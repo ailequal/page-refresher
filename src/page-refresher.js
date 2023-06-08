@@ -38,10 +38,10 @@ const pageRefresher = () => {
 
     let secondsRemaining = interval;
     loop = setInterval(() => {
-      console.log("loop", "secondsRemaining", secondsRemaining);
+      // console.log("loop", "secondsRemaining", secondsRemaining);
 
       if (!isWindowOpen(targetWindow)) {
-        console.log("stop");
+        // console.log("stop");
 
         startStop.innerText = !isWindowOpen(targetWindow) ? "START" : "STOP";
 
