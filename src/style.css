@@ -1,0 +1,60 @@
+h1.title {
+  margin: 30px auto;
+  text-align: center;
+  font-size: 42px;
+}
+
+form#page-refresher {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+div.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+div.inputs span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+div.inputs span label {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+div.inputs span input {
+  width: 450px;
+  font-size: 30px;
+}
+
+span.url {
+}
+
+span.url label {
+}
+
+span.url input {
+}
+
+span.interval {
+}
+
+span.interval label {
+}
+
+span.interval input {
+}
+
+button#start-stop {
+  display: block;
+  margin: 30px auto;
+  font-size: 30px;
+}

@@ -4,34 +4,41 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Page refresher</title>
   </head>
   <body>
-    <form class="refresh">
-      <h2 class="mb-3">Enter Website link to refresh</h2>
+    <h1 class="title">Page refresher</h1>
 
-      <input
-        class="mb-4"
-        type="text"
-        name="url"
-        placeholder="Ctrl + v to paste link"
-        value=""
-        required=""
-      />
+    <form id="page-refresher">
+      <div class="inputs">
+        <span class="url">
+          <label for="url">URL</label>
+          <input
+            id="url"
+            type="text"
+            name="url"
+            placeholder="https://news.ycombinator.com"
+            required
+          />
+        </span>
 
-      <br />
-
-      <label class="timer mb-4">
-        Refresh page at every
-        <input type="number" name="interval" placeholder="10" value="10" />
-        seconds
-      </label>
-
-      <div class="spinner-container">
-        <button class="spinner fa fa-refresh">
-          <span>START / STOP</span>
-        </button>
+        <span class="interval">
+          <label for="interval">Interval</label>
+          <input
+            id="interval"
+            type="number"
+            name="interval"
+            placeholder="10"
+            value="10"
+            min="5"
+            max="60"
+            step="1"
+            required
+          />
+        </span>
       </div>
+
+      <button id="start-stop" type="submit">START</button>
     </form>
 
     <script type="module" src="/src/main.ts"></script>
